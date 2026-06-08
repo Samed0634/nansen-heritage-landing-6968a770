@@ -5,9 +5,9 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Nansen Vize — Sınırları Aşan Miras" },
-      { name: "description", content: "Küresel yetenekler ve yenilikçi şirketler için bürokrasiyi şeffaflığa dönüştüren premium vize ve mobilite danışmanlığı." },
+      { name: "description", content: "Schengen, ABD, İngiltere ve dünya geneli vize başvurularınız için butik, şeffaf ve premium danışmanlık." },
       { property: "og:title", content: "Nansen Vize — Sınırları Aşan Miras" },
-      { property: "og:description", content: "1922 Nansen Pasaportu mirasını devralan butik vize ve global mobilite danışmanlığı." },
+      { property: "og:description", content: "1922 Nansen Pasaportu mirasını devralan butik vize danışmanlığı. Turistik, iş, aile ziyareti ve eğitim vizelerinde uçtan uca süreç yönetimi." },
     ],
   }),
   component: Index,
@@ -91,8 +91,8 @@ function Hero() {
           className="nv-reveal mx-auto mt-8 max-w-2xl text-base leading-relaxed text-foreground/70 md:text-lg"
           style={{ animationDelay: "0.35s" }}
         >
-          Küresel yetenekler ve yenilikçi şirketler için bürokrasiyi şeffaflığa
-          dönüştüren premium vize ve mobilite danışmanlığı.
+          Schengen, ABD, İngiltere ve dünya genelindeki vize başvurularınız için
+          bürokrasiyi şeffaflığa dönüştüren butik bir danışmanlık.
         </p>
         <div className="nv-reveal mt-12" style={{ animationDelay: "0.55s" }}>
           <a
@@ -195,18 +195,18 @@ function Expertise() {
   const items = [
     {
       n: "01",
-      title: "Nitelikli Çalışan & Mavi Kart",
-      body: "Almanya Fırsat Kartı ve Avrupa çalışma vizeleri süreç yönetimi.",
+      title: "Schengen Vizesi",
+      body: "Almanya, Fransa, İtalya, İspanya ve 27 Schengen ülkesi için turistik, iş ve aile ziyareti başvurularında uçtan uca süreç yönetimi.",
     },
     {
       n: "02",
-      title: "Dijital Göçebe Vizeleri",
-      body: "Uzaktan çalışanlar için İspanya, Portekiz ve global lokasyon danışmanlığı.",
+      title: "ABD & İngiltere Vizesi",
+      body: "Amerika Birleşik Devletleri ve Birleşik Krallık vize süreçlerinde randevu, evrak hazırlığı ve mülakat danışmanlığı.",
     },
     {
       n: "03",
-      title: "Kurumsal Mobilite",
-      body: "Şirketlerin ekiplerini yurt dışına taşırken ihtiyaç duyduğu uçtan uca bürokrasi yönetimi.",
+      title: "VIP & Global Vize",
+      body: "Dubai, Rusya, Kanada ve dünya genelinde 100'ü aşkın ülke için kurye ile evrak teslimi ve kapıdan kapıya VIP danışmanlık.",
     },
   ];
   return (
