@@ -267,7 +267,7 @@ function PassportReach() {
       <div className="mx-auto max-w-7xl px-6 py-28 md:px-10 md:py-36">
         <div className="nv-reveal-on-view mx-auto max-w-3xl text-center">
           <p className="mb-6 text-xs uppercase tracking-[0.4em] text-foreground/50">
-            Türk Pasaportunun Gücü
+            Türkiye Cumhuriyeti Pasaportunun Gücü
           </p>
           <h2 className="font-serif text-4xl leading-[1.1] text-foreground md:text-5xl">
             Pasaportunuzun <em className="italic text-primary">dünya haritası</em>.
