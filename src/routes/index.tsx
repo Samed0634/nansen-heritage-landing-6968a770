@@ -243,7 +243,22 @@ function Expertise() {
 }
 
 function Difference() {
-  return _Difference();
+  return (
+    <section className="border-y border-foreground/10 bg-card/40">
+      <div className="mx-auto max-w-4xl px-6 py-28 text-center md:py-36">
+        <p className="nv-reveal-on-view mb-6 text-xs uppercase tracking-[0.4em] text-foreground/50">
+          Farkımız
+        </p>
+        <p className="nv-reveal-on-view font-serif text-2xl leading-[1.5] text-foreground md:text-[1.85rem] md:leading-[1.55]">
+          “WhatsApp üzerinden güvensiz evrak trafiğine ve belirsiz bekleme
+          sürelerine son. Sadece size özel atanan danışmanınızla, kişisel
+          verilerinizin maksimum güvenlikle korunduğu
+          <em className="italic text-primary"> şeffaf bir süreç </em>
+          sunuyoruz.”
+        </p>
+      </div>
+    </section>
+  );
 }
 
 function PassportReach() {
@@ -267,25 +282,6 @@ function PassportReach() {
         <div className="nv-reveal-on-view mt-16">
           <VisaMap />
         </div>
-      </div>
-    </section>
-  );
-}
-
-function _Difference() {
-  return (
-    <section className="border-y border-foreground/10 bg-card/40">
-      <div className="mx-auto max-w-4xl px-6 py-28 text-center md:py-36">
-        <p className="nv-reveal-on-view mb-6 text-xs uppercase tracking-[0.4em] text-foreground/50">
-          Farkımız
-        </p>
-        <p className="nv-reveal-on-view font-serif text-2xl leading-[1.5] text-foreground md:text-[1.85rem] md:leading-[1.55]">
-          “WhatsApp üzerinden güvensiz evrak trafiğine ve belirsiz bekleme
-          sürelerine son. Sadece size özel atanan danışmanınızla, kişisel
-          verilerinizin maksimum güvenlikle korunduğu
-          <em className="italic text-primary"> şeffaf bir süreç </em>
-          sunuyoruz.”
-        </p>
       </div>
     </section>
   );
