@@ -80,11 +80,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Nansen Vize — Premium Vize ve Mobilite Danışmanlığı" },
       { name: "description", content: "Küresel yetenekler ve yenilikçi şirketler için bürokrasiyi şeffaflığa dönüştüren butik vize ve mobilite danışmanlığı." },
       { name: "author", content: "Nansen Vize" },
-      { property: "og:title", content: "Nansen Vize — Sınırları Aşan Miras" },
-      { property: "og:description", content: "1922'nin Nansen Pasaportu mirasını devralan premium vize ve global mobilite danışmanlığı." },
+      { property: "og:title", content: "Nansen Vize — Premium Vize ve Mobilite Danışmanlığı" },
+      { property: "og:description", content: "Küresel yetenekler ve yenilikçi şirketler için bürokrasiyi şeffaflığa dönüştüren butik vize ve mobilite danışmanlığı." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@nansenvize" },
+      { name: "twitter:title", content: "Nansen Vize — Premium Vize ve Mobilite Danışmanlığı" },
+      { name: "twitter:description", content: "Küresel yetenekler ve yenilikçi şirketler için bürokrasiyi şeffaflığa dönüştüren butik vize ve mobilite danışmanlığı." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/5TONc8Pr3mVQSImLMbWZu1DbYB52/social-images/social-1780954638680-Adsız_tasarım_(1).webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/5TONc8Pr3mVQSImLMbWZu1DbYB52/social-images/social-1780954638680-Adsız_tasarım_(1).webp" },
     ],
     links: [
       {
