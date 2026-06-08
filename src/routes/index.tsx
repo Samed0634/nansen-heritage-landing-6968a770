@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef } from "react";
+import { VisaMap } from "@/components/VisaMap";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -43,6 +44,7 @@ function Index() {
       <Hero />
       <Heritage />
       <Expertise />
+      <PassportReach />
       <Difference />
       <CtaFooter />
     </div>
