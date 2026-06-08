@@ -269,7 +269,7 @@ function CtaFooter() {
         </h2>
         <div className="nv-reveal-on-view mt-12">
           <a
-            href="mailto:hello@nansenvize.com"
+            href="mailto:info@nansenvize.com"
             className="group inline-flex items-center gap-3 rounded-full bg-primary px-9 py-4 text-sm font-medium text-primary-foreground transition-all hover:scale-[1.02]"
           >
             Ön Değerlendirme İçin Bize Ulaşın
@@ -283,8 +283,8 @@ function CtaFooter() {
           <div className="font-serif text-xl text-background">
             Nansen<span className="text-primary">.</span>
           </div>
-          <a href="mailto:hello@nansenvize.com" className="transition-colors hover:text-background">
-            hello@nansenvize.com
+          <a href="mailto:info@nansenvize.com" className="transition-colors hover:text-background">
+            info@nansenvize.com
           </a>
           <div className="flex items-center gap-6">
             <a href="#" className="transition-colors hover:text-background">Privacy Policy</a>
