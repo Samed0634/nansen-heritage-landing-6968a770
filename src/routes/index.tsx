@@ -250,7 +250,7 @@ function Difference() {
           Farkımız
         </p>
         <p className="nv-reveal-on-view font-serif text-2xl leading-[1.5] text-foreground md:text-[1.85rem] md:leading-[1.55]">
-          “WhatsApp üzerinden güvensiz evrak trafiğine ve belirsiz bekleme
+          “Güvensiz evrak trafiğine ve belirsiz bekleme
           sürelerine son. Sadece size özel atanan danışmanınızla, kişisel
           verilerinizin maksimum güvenlikle korunduğu
           <em className="italic text-primary"> şeffaf bir süreç </em>
