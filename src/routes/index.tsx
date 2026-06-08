@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef } from "react";
 import { VisaMap } from "@/components/VisaMap";
+import logoAsset from "@/assets/nansen-logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -55,8 +56,9 @@ function Nav() {
   return (
     <header className="absolute top-0 left-0 right-0 z-30">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 md:px-10 md:py-7">
-        <a href="#" className="font-serif text-xl tracking-tight text-foreground md:text-2xl">
-          Nansen<span className="text-primary">.</span>
+        <a href="#" className="flex items-center gap-2.5 font-serif text-xl tracking-tight text-foreground md:text-2xl">
+          <img src={logoAsset.url} alt="Nansen Vize" className="h-8 w-8 md:h-9 md:w-9" />
+          <span>Nansen<span className="text-primary">.</span></span>
         </a>
         <div className="hidden items-center gap-10 text-sm text-foreground/70 md:flex">
           <a href="#hikayemiz" className="transition-colors hover:text-foreground">Hikayemiz</a>
@@ -308,8 +310,9 @@ function CtaFooter() {
 
       <div className="border-t border-background/10">
         <div className="mx-auto flex max-w-7xl flex-col gap-5 px-5 py-8 text-xs text-background/60 md:flex-row md:items-center md:justify-between md:gap-6 md:px-10 md:py-10 md:text-sm">
-          <div className="font-serif text-lg text-background md:text-xl">
-            Nansen<span className="text-primary">.</span>
+          <div className="flex items-center gap-2.5 font-serif text-lg text-background md:text-xl">
+            <img src={logoAsset.url} alt="Nansen Vize" className="h-7 w-7 brightness-0 invert opacity-90 md:h-8 md:w-8" />
+            <span>Nansen<span className="text-primary">.</span></span>
           </div>
           <a href="mailto:info@nansenvize.com" className="transition-colors hover:text-background">
             info@nansenvize.com
