@@ -195,18 +195,18 @@ function Expertise() {
   const items = [
     {
       n: "01",
-      title: "Nitelikli Çalışan & Mavi Kart",
-      body: "Almanya Fırsat Kartı ve Avrupa çalışma vizeleri süreç yönetimi.",
+      title: "Schengen Vizesi",
+      body: "Almanya, Fransa, İtalya, İspanya ve 27 Schengen ülkesi için turistik, iş ve aile ziyareti başvurularında uçtan uca süreç yönetimi.",
     },
     {
       n: "02",
-      title: "Dijital Göçebe Vizeleri",
-      body: "Uzaktan çalışanlar için İspanya, Portekiz ve global lokasyon danışmanlığı.",
+      title: "ABD & İngiltere Vizesi",
+      body: "Amerika Birleşik Devletleri ve Birleşik Krallık vize süreçlerinde randevu, evrak hazırlığı ve mülakat danışmanlığı.",
     },
     {
       n: "03",
-      title: "Kurumsal Mobilite",
-      body: "Şirketlerin ekiplerini yurt dışına taşırken ihtiyaç duyduğu uçtan uca bürokrasi yönetimi.",
+      title: "VIP & Global Vize",
+      body: "Dubai, Rusya, Kanada ve dünya genelinde 100'ü aşkın ülke için kurye ile evrak teslimi ve kapıdan kapıya VIP danışmanlık.",
     },
   ];
   return (
