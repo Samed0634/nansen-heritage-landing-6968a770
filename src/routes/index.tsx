@@ -311,7 +311,9 @@ function CtaFooter() {
       <div className="border-t border-background/10">
         <div className="mx-auto flex max-w-7xl flex-col gap-5 px-5 py-8 text-xs text-background/60 md:flex-row md:items-center md:justify-between md:gap-6 md:px-10 md:py-10 md:text-sm">
           <div className="flex items-center gap-2.5 font-serif text-lg text-background md:text-xl">
-            <img src={logoAsset.url} alt="Nansen Vize" className="h-7 w-7 brightness-0 invert opacity-90 md:h-8 md:w-8" />
+            <span className="inline-flex items-center justify-center rounded-sm bg-[#EAE3D7] p-1.5">
+              <img src={logoAsset.url} alt="Nansen Vize" className="h-6 w-6 md:h-7 md:w-7" />
+            </span>
             <span>Nansen<span className="text-primary">.</span></span>
           </div>
           <a href="mailto:info@nansenvize.com" className="transition-colors hover:text-background">
