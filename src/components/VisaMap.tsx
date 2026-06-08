@@ -128,14 +128,14 @@ export function VisaMap() {
       {/* Stat strip */}
       <div className="grid grid-cols-2 gap-px overflow-hidden rounded-sm border border-foreground/15 bg-foreground/15 md:grid-cols-4">
         {stats.map((s) => (
-          <div key={s.key} className="bg-background px-6 py-6 text-center">
+          <div key={s.key} className="bg-background px-3 py-5 text-center md:px-6 md:py-6">
             <div
-              className="font-serif text-3xl md:text-4xl"
+              className="font-serif text-2xl md:text-4xl"
               style={{ color: COLORS[s.key] }}
             >
               {s.count}
             </div>
-            <div className="mt-1 text-[10px] uppercase tracking-[0.25em] text-foreground/55">
+            <div className="mt-1 text-[9px] uppercase tracking-[0.2em] text-foreground/55 md:text-[10px] md:tracking-[0.25em]">
               {s.label}
             </div>
           </div>
@@ -143,11 +143,11 @@ export function VisaMap() {
       </div>
 
       {/* Legend / filters */}
-      <div className="mt-8 flex flex-wrap items-center gap-2">
+      <div className="mt-6 flex flex-wrap items-center gap-2 md:mt-8">
         <button
           type="button"
           onClick={() => setFilter(null)}
-          className={`rounded-full border px-4 py-2 text-xs font-medium transition-all ${
+          className={`rounded-full border px-3 py-1.5 text-[11px] font-medium transition-all md:px-4 md:py-2 md:text-xs ${
             filter === null
               ? "border-foreground bg-foreground text-background"
               : "border-foreground/20 bg-background text-foreground/70 hover:border-foreground/50"
@@ -162,7 +162,7 @@ export function VisaMap() {
               key={s.key}
               type="button"
               onClick={() => setFilter(active ? null : s.key)}
-              className="inline-flex items-center gap-2 rounded-full border px-4 py-2 text-xs font-medium transition-all"
+              className="inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-[11px] font-medium transition-all md:px-4 md:py-2 md:text-xs"
               style={
                 active
                   ? { background: COLORS[s.key], borderColor: COLORS[s.key], color: "#fff" }
@@ -187,8 +187,11 @@ export function VisaMap() {
 
       {tooltip && (
         <div
-          className="pointer-events-none fixed z-50 min-w-[160px] rounded-sm border border-foreground/15 bg-background px-4 py-3 text-sm shadow-xl"
-          style={{ left: tooltip.x + 16, top: tooltip.y - 10 }}
+          className="pointer-events-none fixed z-50 min-w-[150px] max-w-[220px] rounded-sm border border-foreground/15 bg-background px-3 py-2.5 text-sm shadow-xl md:px-4 md:py-3"
+          style={{
+            left: Math.min(tooltip.x + 16, (typeof window !== "undefined" ? window.innerWidth : 9999) - 232),
+            top: Math.max(tooltip.y - 10, 8),
+          }}
         >
           {tooltip.flag && <div className="mb-1 text-xl leading-none">{tooltip.flag}</div>}
           <div className="font-serif text-base text-foreground">{tooltip.name}</div>
