@@ -187,8 +187,11 @@ export function VisaMap() {
 
       {tooltip && (
         <div
-          className="pointer-events-none fixed z-50 min-w-[160px] rounded-sm border border-foreground/15 bg-background px-4 py-3 text-sm shadow-xl"
-          style={{ left: tooltip.x + 16, top: tooltip.y - 10 }}
+          className="pointer-events-none fixed z-50 min-w-[150px] max-w-[220px] rounded-sm border border-foreground/15 bg-background px-3 py-2.5 text-sm shadow-xl md:px-4 md:py-3"
+          style={{
+            left: Math.min(tooltip.x + 16, (typeof window !== "undefined" ? window.innerWidth : 9999) - 232),
+            top: Math.max(tooltip.y - 10, 8),
+          }}
         >
           {tooltip.flag && <div className="mb-1 text-xl leading-none">{tooltip.flag}</div>}
           <div className="font-serif text-base text-foreground">{tooltip.name}</div>
