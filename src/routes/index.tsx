@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef } from "react";
+import { VisaMap } from "@/components/VisaMap";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -43,6 +44,7 @@ function Index() {
       <Hero />
       <Heritage />
       <Expertise />
+      <PassportReach />
       <Difference />
       <CtaFooter />
     </div>
@@ -254,6 +256,32 @@ function Difference() {
           <em className="italic text-primary"> şeffaf bir süreç </em>
           sunuyoruz.”
         </p>
+      </div>
+    </section>
+  );
+}
+
+function PassportReach() {
+  return (
+    <section id="pasaport-gucu" className="border-t border-foreground/10 bg-card/30">
+      <div className="mx-auto max-w-7xl px-6 py-28 md:px-10 md:py-36">
+        <div className="nv-reveal-on-view mx-auto max-w-3xl text-center">
+          <p className="mb-6 text-xs uppercase tracking-[0.4em] text-foreground/50">
+            Türk Pasaportunun Gücü
+          </p>
+          <h2 className="font-serif text-4xl leading-[1.1] text-foreground md:text-5xl">
+            Pasaportunuzun <em className="italic text-primary">dünya haritası</em>.
+          </h2>
+          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-foreground/65 md:text-[1.05rem]">
+            Türkiye pasaportuyla hangi ülkelere vizesiz, varışta veya e-vize ile
+            gidebileceğinizi tek bakışta görün. Bizimle çalıştığınız her ülke,
+            sizin için titizlikle yönetilen bir süreçtir.
+          </p>
+        </div>
+
+        <div className="nv-reveal-on-view mt-16">
+          <VisaMap />
+        </div>
       </div>
     </section>
   );
