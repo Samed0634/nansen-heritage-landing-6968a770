@@ -54,8 +54,8 @@ function Index() {
 function Nav() {
   return (
     <header className="absolute top-0 left-0 right-0 z-30">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-7 md:px-10">
-        <a href="#" className="font-serif text-2xl tracking-tight text-foreground">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 md:px-10 md:py-7">
+        <a href="#" className="font-serif text-xl tracking-tight text-foreground md:text-2xl">
           Nansen<span className="text-primary">.</span>
         </a>
         <div className="hidden items-center gap-10 text-sm text-foreground/70 md:flex">
@@ -65,7 +65,7 @@ function Nav() {
         </div>
         <a
           href="#iletisim"
-          className="inline-flex items-center justify-center rounded-full border border-foreground/20 px-5 py-2.5 text-sm font-medium text-foreground transition-all hover:border-foreground hover:bg-foreground hover:text-background"
+          className="inline-flex items-center justify-center rounded-full border border-foreground/20 px-4 py-2 text-xs font-medium text-foreground transition-all hover:border-foreground hover:bg-foreground hover:text-background md:px-5 md:py-2.5 md:text-sm"
         >
           Ön Görüşme
         </a>
@@ -76,30 +76,30 @@ function Nav() {
 
 function Hero() {
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-32 pb-24">
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-5 pt-28 pb-20 md:px-6 md:pt-32 md:pb-24">
       {/* subtle decorative line */}
       <div className="pointer-events-none absolute inset-x-0 top-1/2 mx-auto h-px max-w-5xl bg-foreground/10" aria-hidden />
       <div className="relative mx-auto max-w-4xl text-center">
-        <p className="nv-reveal mb-8 text-xs uppercase tracking-[0.4em] text-foreground/50">
+        <p className="nv-reveal mb-6 text-[10px] uppercase tracking-[0.4em] text-foreground/50 md:mb-8 md:text-xs">
           — Est. Inspired by 1922 —
         </p>
         <h1
-          className="nv-reveal font-serif text-5xl leading-[1.05] tracking-tight text-foreground md:text-7xl lg:text-[5.5rem]"
+          className="nv-reveal font-serif text-4xl leading-[1.05] tracking-tight text-foreground sm:text-5xl md:text-7xl lg:text-[5.5rem]"
           style={{ animationDelay: "0.15s" }}
         >
           Sınırları <em className="font-normal italic text-primary">Aşan</em> Miras.
         </h1>
         <p
-          className="nv-reveal mx-auto mt-8 max-w-2xl text-base leading-relaxed text-foreground/70 md:text-lg"
+          className="nv-reveal mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-foreground/70 sm:text-base md:mt-8 md:text-lg"
           style={{ animationDelay: "0.35s" }}
         >
           Schengen, ABD, İngiltere ve dünya genelindeki vize başvurularınız için
           bürokrasiyi şeffaflığa dönüştüren butik bir danışmanlık.
         </p>
-        <div className="nv-reveal mt-12" style={{ animationDelay: "0.55s" }}>
+        <div className="nv-reveal mt-10 md:mt-12" style={{ animationDelay: "0.55s" }}>
           <a
             href="#iletisim"
-            className="group inline-flex items-center gap-3 rounded-full bg-primary px-8 py-4 text-sm font-medium text-primary-foreground shadow-[0_10px_40px_-15px_oklch(0.59_0.13_160/0.6)] transition-all hover:scale-[1.02] hover:shadow-[0_15px_50px_-15px_oklch(0.59_0.13_160/0.7)]"
+            className="group inline-flex items-center gap-3 rounded-full bg-primary px-6 py-3.5 text-xs font-medium text-primary-foreground shadow-[0_10px_40px_-15px_oklch(0.59_0.13_160/0.6)] transition-all hover:scale-[1.02] hover:shadow-[0_15px_50px_-15px_oklch(0.59_0.13_160/0.7)] md:px-8 md:py-4 md:text-sm"
           >
             Bizimle İletişime Geçin
             <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
@@ -113,24 +113,24 @@ function Hero() {
 function Heritage() {
   return (
     <section id="hikayemiz" className="bg-foreground text-background">
-      <div className="mx-auto grid max-w-7xl gap-16 px-6 py-28 md:grid-cols-2 md:gap-20 md:px-10 md:py-36 lg:py-44">
+      <div className="mx-auto grid max-w-7xl gap-12 px-5 py-20 md:grid-cols-2 md:gap-20 md:px-10 md:py-36 lg:py-44">
         <div className="nv-reveal-on-view">
-          <p className="mb-6 text-xs uppercase tracking-[0.4em] text-background/50">
+          <p className="mb-5 text-[10px] uppercase tracking-[0.4em] text-background/50 md:mb-6 md:text-xs">
             Hikayemiz
           </p>
-          <h2 className="font-serif text-4xl leading-[1.1] text-background md:text-5xl lg:text-6xl">
+          <h2 className="font-serif text-3xl leading-[1.1] text-background sm:text-4xl md:text-5xl lg:text-6xl">
             1922'den Bugüne <br />
             <em className="font-normal italic text-background/80">Nansen Vizyonu</em>
           </h2>
-          <div className="mt-10 h-px w-16 bg-background/30" />
-          <p className="mt-10 text-base leading-[1.85] text-background/75 md:text-[1.05rem]">
+          <div className="mt-8 h-px w-16 bg-background/30 md:mt-10" />
+          <p className="mt-8 text-sm leading-[1.85] text-background/75 md:mt-10 md:text-[1.05rem]">
             1922 yılında, I. Dünya Savaşı sonrası devletsiz kalanlara uluslararası
             seyahat hakkı tanımak için tarihteki ilk seyahat belgesi olan
             <span className="text-background"> "Nansen Pasaportu" </span>
             yaratıldı. O günkü amaç sınırları kaldırmak ve insanlara hareket
             özgürlüğü vermekti.
           </p>
-          <p className="mt-6 text-base leading-[1.85] text-background/75 md:text-[1.05rem]">
+          <p className="mt-6 text-sm leading-[1.85] text-background/75 md:text-[1.05rem]">
             Bugün, bu tarihi mirası devralıyoruz. Geleneksel acentelerin karmaşık
             ve yorucu süreçlerini reddediyor; yüksek nitelikli profesyonellerin ve
             şirketlerin globalleşme yolculuğunu güvenle, şeffaflıkla ve butik bir
@@ -212,29 +212,29 @@ function Expertise() {
     },
   ];
   return (
-    <section id="uzmanliklarimiz" className="mx-auto max-w-7xl px-6 py-28 md:px-10 md:py-36">
+    <section id="uzmanliklarimiz" className="mx-auto max-w-7xl px-5 py-20 md:px-10 md:py-36">
       <div className="nv-reveal-on-view mx-auto max-w-3xl text-center">
-        <p className="mb-6 text-xs uppercase tracking-[0.4em] text-foreground/50">
+        <p className="mb-5 text-[10px] uppercase tracking-[0.4em] text-foreground/50 md:mb-6 md:text-xs">
           Uzmanlıklarımız
         </p>
-        <h2 className="font-serif text-4xl leading-[1.1] text-foreground md:text-5xl">
+        <h2 className="font-serif text-3xl leading-[1.1] text-foreground sm:text-4xl md:text-5xl">
           Belirli alanlarda, <em className="italic text-primary">derin</em> uzmanlık.
         </h2>
       </div>
 
-      <div className="mt-20 grid gap-6 md:grid-cols-3">
+      <div className="mt-12 grid gap-5 md:mt-20 md:grid-cols-3 md:gap-6">
         {items.map((it, i) => (
           <article
             key={it.n}
-            className="nv-reveal-on-view group relative flex flex-col rounded-sm border border-foreground/15 bg-background/50 p-10 transition-all duration-500 hover:border-primary/60 hover:bg-card"
+            className="nv-reveal-on-view group relative flex flex-col rounded-sm border border-foreground/15 bg-background/50 p-7 transition-all duration-500 hover:border-primary/60 hover:bg-card md:p-10"
             style={{ transitionDelay: `${i * 80}ms` }}
           >
             <span className="font-serif text-sm italic text-foreground/40">{it.n}</span>
-            <h3 className="mt-10 font-serif text-2xl leading-snug text-foreground">
+            <h3 className="mt-6 font-serif text-xl leading-snug text-foreground md:mt-10 md:text-2xl">
               {it.title}
             </h3>
-            <div className="mt-6 h-px w-10 bg-foreground/20 transition-all duration-500 group-hover:w-20 group-hover:bg-primary" />
-            <p className="mt-6 text-sm leading-relaxed text-foreground/65">{it.body}</p>
+            <div className="mt-5 h-px w-10 bg-foreground/20 transition-all duration-500 group-hover:w-20 group-hover:bg-primary md:mt-6" />
+            <p className="mt-5 text-sm leading-relaxed text-foreground/65 md:mt-6">{it.body}</p>
           </article>
         ))}
       </div>
@@ -245,11 +245,11 @@ function Expertise() {
 function Difference() {
   return (
     <section className="border-y border-foreground/10 bg-card/40">
-      <div className="mx-auto max-w-4xl px-6 py-28 text-center md:py-36">
-        <p className="nv-reveal-on-view mb-6 text-xs uppercase tracking-[0.4em] text-foreground/50">
+      <div className="mx-auto max-w-4xl px-5 py-20 text-center md:px-6 md:py-36">
+        <p className="nv-reveal-on-view mb-5 text-[10px] uppercase tracking-[0.4em] text-foreground/50 md:mb-6 md:text-xs">
           Farkımız
         </p>
-        <p className="nv-reveal-on-view font-serif text-2xl leading-[1.5] text-foreground md:text-[1.85rem] md:leading-[1.55]">
+        <p className="nv-reveal-on-view font-serif text-lg leading-[1.55] text-foreground sm:text-xl md:text-[1.85rem] md:leading-[1.55]">
           “Güvensiz evrak trafiğine ve belirsiz bekleme
           sürelerine son. Sadece size özel atanan danışmanınızla, kişisel
           verilerinizin maksimum güvenlikle korunduğu
@@ -264,22 +264,22 @@ function Difference() {
 function PassportReach() {
   return (
     <section id="pasaport-gucu" className="border-t border-foreground/10 bg-card/30">
-      <div className="mx-auto max-w-7xl px-6 py-28 md:px-10 md:py-36">
+      <div className="mx-auto max-w-7xl px-5 py-20 md:px-10 md:py-36">
         <div className="nv-reveal-on-view mx-auto max-w-3xl text-center">
-          <p className="mb-6 text-xs uppercase tracking-[0.4em] text-foreground/50">
+          <p className="mb-5 text-[10px] uppercase tracking-[0.4em] text-foreground/50 md:mb-6 md:text-xs">
             Türkiye Cumhuriyeti Pasaportunun Gücü
           </p>
-          <h2 className="font-serif text-4xl leading-[1.1] text-foreground md:text-5xl">
+          <h2 className="font-serif text-3xl leading-[1.1] text-foreground sm:text-4xl md:text-5xl">
             Pasaportunuzun <em className="italic text-primary">dünya haritası</em>.
           </h2>
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-foreground/65 md:text-[1.05rem]">
+          <p className="mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-foreground/65 md:mt-6 md:text-[1.05rem]">
             Türkiye pasaportuyla hangi ülkelere vizesiz, varışta veya e-vize ile
             gidebileceğinizi tek bakışta görün. Bizimle çalıştığınız her ülke,
             sizin için titizlikle yönetilen bir süreçtir.
           </p>
         </div>
 
-        <div className="nv-reveal-on-view mt-16">
+        <div className="nv-reveal-on-view mt-10 md:mt-16">
           <VisaMap />
         </div>
       </div>
@@ -290,15 +290,15 @@ function PassportReach() {
 function CtaFooter() {
   return (
     <section id="iletisim" className="bg-foreground text-background">
-      <div className="mx-auto max-w-5xl px-6 py-28 text-center md:py-40">
-        <h2 className="nv-reveal-on-view mx-auto max-w-3xl font-serif text-4xl leading-[1.15] text-background md:text-6xl">
+      <div className="mx-auto max-w-5xl px-5 py-20 text-center md:px-6 md:py-40">
+        <h2 className="nv-reveal-on-view mx-auto max-w-3xl font-serif text-3xl leading-[1.15] text-background sm:text-4xl md:text-6xl">
           Yeni hayatınıza veya global ofisinize giden yolda{" "}
           <em className="italic text-background/70">ilk adımı</em> atın.
         </h2>
-        <div className="nv-reveal-on-view mt-12">
+        <div className="nv-reveal-on-view mt-10 md:mt-12">
           <a
             href="mailto:info@nansenvize.com"
-            className="group inline-flex items-center gap-3 rounded-full bg-primary px-9 py-4 text-sm font-medium text-primary-foreground transition-all hover:scale-[1.02]"
+            className="group inline-flex items-center gap-3 rounded-full bg-primary px-6 py-3.5 text-xs font-medium text-primary-foreground transition-all hover:scale-[1.02] md:px-9 md:py-4 md:text-sm"
           >
             Ön Değerlendirme İçin Bize Ulaşın
             <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
@@ -307,14 +307,14 @@ function CtaFooter() {
       </div>
 
       <div className="border-t border-background/10">
-        <div className="mx-auto flex max-w-7xl flex-col gap-6 px-6 py-10 text-sm text-background/60 md:flex-row md:items-center md:justify-between md:px-10">
-          <div className="font-serif text-xl text-background">
+        <div className="mx-auto flex max-w-7xl flex-col gap-5 px-5 py-8 text-xs text-background/60 md:flex-row md:items-center md:justify-between md:gap-6 md:px-10 md:py-10 md:text-sm">
+          <div className="font-serif text-lg text-background md:text-xl">
             Nansen<span className="text-primary">.</span>
           </div>
           <a href="mailto:info@nansenvize.com" className="transition-colors hover:text-background">
             info@nansenvize.com
           </a>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center gap-4 md:gap-6">
             <a href="#" className="transition-colors hover:text-background">Privacy Policy</a>
             <span>© 2026 Nansen Vize</span>
           </div>
