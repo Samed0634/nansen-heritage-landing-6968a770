@@ -1,21 +1,8 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef } from "react";
 import { VisaMap } from "@/components/VisaMap";
 import logoAsset from "@/assets/nansen-logo.png.asset.json";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Nansen Vize — Sınırları Aşan Miras" },
-      { name: "description", content: "Schengen, ABD, İngiltere ve dünya geneli vize başvurularınız için butik, şeffaf ve premium danışmanlık." },
-      { property: "og:title", content: "Nansen Vize — Sınırları Aşan Miras" },
-      { property: "og:description", content: "1922 Nansen Pasaportu mirasını devralan butik vize danışmanlığı. Turistik, iş, aile ziyareti ve eğitim vizelerinde uçtan uca süreç yönetimi." },
-    ],
-  }),
-  component: Index,
-});
-
-function Index() {
+export default function App() {
   const rootRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -79,7 +66,6 @@ function Nav() {
 function Hero() {
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-5 pt-28 pb-20 md:px-6 md:pt-32 md:pb-24">
-      {/* subtle decorative line */}
       <div className="pointer-events-none absolute inset-x-0 top-1/2 mx-auto h-px max-w-5xl bg-foreground/10" aria-hidden />
       <div className="relative mx-auto max-w-4xl text-center">
         <p className="nv-reveal mb-6 text-[10px] uppercase tracking-[0.4em] text-foreground/50 md:mb-8 md:text-xs">
