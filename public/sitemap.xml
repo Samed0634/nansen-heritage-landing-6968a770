@@ -5,4 +5,13 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url><loc>https://www.nansenvize.com/schengen-vizesi</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.nansenvize.com/amerika-vizesi</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.nansenvize.com/ingiltere-vizesi</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.nansenvize.com/kanada-vizesi</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.nansenvize.com/calisma-vizesi</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.nansenvize.com/ogrenci-vizesi</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.nansenvize.com/turistik-vize</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.nansenvize.com/kurumsal-mobilite</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.nansenvize.com/sss</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
